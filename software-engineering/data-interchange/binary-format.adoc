@@ -1,0 +1,136 @@
+= Binary Format
+
+* Binary Source File: .binary
+* .binary Files Must be Statically Typed
+* .binary Files Cannot be Dynamically Typed
+* .binary Files are Required
+
+* //! Documentation Comment
+* //!  - Inner line doc
+* //!! - Still an inner line doc (but with a bang at the beginning)
+* /*!  - Inner block doc */
+* /*!! - Still an inner block doc (but with a bang at the beginning) */
+* //   - Only a comment
+* ///  - Outer line doc (exactly 3 slashes)
+* //// - Only a comment
+* /*   - Only a comment */
+* /**  - Outer block doc (exactly) 2 asterisks */
+* /*** - Only a comment */
+
+* #! Documentation Comment
+* ##!  - Inner line doc
+* ##!! - Still an inner line doc (but with a bang at the beginning)
+* #*!  - Inner block doc */
+* #*!! - Still an inner block doc (but with a bang at the beginning) */
+* ##   - Only a comment
+* ###  - Outer line doc (exactly 3 hash symbols)
+* #### - Only a comment
+* #*   - Only a comment */
+* #**  - Outer block doc (exactly) 2 asterisks */
+* #*** - Only a comment */
+
+== Keywords and Primitive Types
+
+=== Primitive Types
+
+[cols="1,1"]
+|=======================================================
+| symbol | size | Binary | Octal | Decimal | Hexadecimal
+
+| bool | _ Bytes | | | |
+
+| byte | _ Bytes | | | |
+
+| char | _ Bytes | | | |
+
+| float32 | _ Bytes | | | |
+
+| float64 | _ Bytes | | | |
+
+| float128 | _ Bytes | | | |
+
+| isize | _ Bytes | | | |
+
+| int8 | _ Bytes | | | |
+
+| int16 | _ Bytes | | | |
+
+| int32 | _ Bytes | | | |
+
+| int64 | _ Bytes | | | |
+
+| int128 | _ Bytes | | | |
+
+| map | _ Bytes | | | |
+
+| str | _ Bytes | | | |
+
+| usize | _ Bytes | | | |
+
+| uint8 | _ Bytes | | | |
+
+| uint16 | _ Bytes | | | |
+
+| uint32 | _ Bytes | | | |
+
+| uint64 | _ Bytes | | | |
+
+| uint128 | _ Bytes | | | |
+|========================================================
+
+=== Keywords
+
+[cols="1,1"]
+|=======================================================
+| symbol | size | Binary | Octal | Decimal | Hexadecimal
+
+| break | _ Bytes | | | |
+
+| case | _ Bytes | | | |
+
+| const | _ Bytes | | | |
+
+| continue | _ Bytes | | | |
+
+| default | _ Bytes | | | |
+
+| else | _ Bytes | | | |
+
+| exlcude | _ Bytes | | | |
+
+| export | _ Bytes | | | |
+
+| false | _ Bytes | | | |
+
+| func | _ Bytes | | | |
+
+| if | _ Bytes | | | |
+
+| import | _ Bytes | | | |
+
+| include | _ Bytes | | | |
+
+| return | _ Bytes | | | |
+
+| static | _ Bytes | | | |
+
+| struct | _ Bytes | | | |
+
+| switch | _ Bytes | | | |
+
+| true | _ Bytes | | | |
+
+| var | _ Bytes | | | |
+
+| while | _ Bytes | | | |
+
+| type | _ Bytes | | | |
+|=======================================================
+
+== Binary Format Syntax
+
+[,shell]
+----
+
+----
+
