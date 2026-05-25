@@ -133,212 +133,56 @@
 
 | symbol   | size    | Binary | Octal | Decimal | Hexadecimal |
 | -------- | ------- | ------ | ----- | ------- | ----------- |
-| bool     | 4 Bytes |        |       | 428     |             |
-| byte     | 4 Bytes |        |       | 436     |             |
-| char     | 4 Bytes |        |       | 414     |             |
-| float32  | 7 Bytes |        |       | 635     |             |
-| float64  | 7 Bytes |        |       | 640     |             |
-| float128 | 8 Bytes |        |       | 689     |             |
-| isize    | 5 Bytes |        |       | 548     |             |
-| int8     | 4 Bytes |        |       | 387     |             |
-| int16    | 5 Bytes |        |       | 434     |             |
-| int32    | 5 Bytes |        |       | 432     |             |
-| int64    | 5 Bytes |        |       | 427     |             |
-| int128   | 6 Bytes |        |       | 486     |             |
-| map      | 3 Bytes |        |       | 318     |             |
-| str      | 3 Bytes |        |       | 345     |             |
-| usize    | 5 Bytes |        |       | 560     |             |
-| uint8    | 5 Bytes |        |       | 504     |             |
-| uint16   | 6 Bytes |        |       | 551     |             |
-| uint32   | 6 Bytes |        |       | 549     |             |
-| uint64   | 6 Bytes |        |       | 544     |             |
-| uint128  | 7 Bytes |        |       | 603     |             |
+| bool     | _ Bytes |        |       |         |             |
+| byte     | _ Bytes |        |       |         |             |
+| char     | _ Bytes |        |       |         |             |
+| float32  | _ Bytes |        |       |         |             |
+| float64  | _ Bytes |        |       |         |             |
+| float128 | _ Bytes |        |       |         |             |
+| isize    | _ Bytes |        |       |         |             |
+| int8     | _ Bytes |        |       |         |             |
+| int16    | _ Bytes |        |       |         |             |
+| int32    | _ Bytes |        |       |         |             |
+| int64    | _ Bytes |        |       |         |             |
+| int128   | _ Bytes |        |       |         |             |
+| map      | _ Bytes |        |       |         |             |
+| str      | _ Bytes |        |       |         |             |
+| usize    | _ Bytes |        |       |         |             |
+| uint8    | _ Bytes |        |       |         |             |
+| uint16   | _ Bytes |        |       |         |             |
+| uint32   | _ Bytes |        |       |         |             |
+| uint64   | _ Bytes |        |       |         |             |
+| uint128  | _ Bytes |        |       |         |             |
 
 ### Keywords
 
 | symbol   | size    | Binary | Octal | Decimal | Hexadecimal |
 | -------- | ------- | ------ | ----- | ------- | ----------- |
-| break    | 5 Bytes |        |       | 517     |             |
-| case     | 4 Bytes |        |       | 412     |             |
-| const    | 5 Bytes |        |       | 551     |             |
-| continue | 8 Bytes |        |       | 869     |             |
-| default  | 7 Bytes |        |       | 742     |             |
-| else     | 4 Bytes |        |       | 425     |             |
-| exlcude  | 7 Bytes |        |       | 746     |             |
-| export   | 6 Bytes |        |       | 674     |             |
-| false    | 5 Bytes |        |       | 523     |             |
-| func     | 4 Bytes |        |       | 428     |             |
-| if       | 2 Bytes |        |       | 207     |             |
-| import   | 6 Bytes |        |       | 667     |             |
-| include  | 7 Bytes |        |       | 740     |             |
-| return   | 6 Bytes |        |       | 672     |             |
-| static   | 6 Bytes |        |       | 648     |             |
-| struct   | 6 Bytes |        |       | 667     |             |
-| switch   | 6 Bytes |        |       | 658     |             |
-| true     | 4 Bytes |        |       | 448     |             |
-| var      | 3 Bytes |        |       | 329     |             |
-| while    | 5 Bytes |        |       | 537     |             |
-| type     | 4 Bytes |        |       | 450     |             |
+| break    | _ Bytes |        |       |         |             |
+| case     | _ Bytes |        |       |         |             |
+| const    | _ Bytes |        |       |         |             |
+| continue | _ Bytes |        |       |         |             |
+| default  | _ Bytes |        |       |         |             |
+| else     | _ Bytes |        |       |         |             |
+| exlcude  | _ Bytes |        |       |         |             |
+| export   | _ Bytes |        |       |         |             |
+| false    | _ Bytes |        |       |         |             |
+| func     | _ Bytes |        |       |         |             |
+| if       | _ Bytes |        |       |         |             |
+| import   | _ Bytes |        |       |         |             |
+| include  | _ Bytes |        |       |         |             |
+| return   | _ Bytes |        |       |         |             |
+| static   | _ Bytes |        |       |         |             |
+| struct   | _ Bytes |        |       |         |             |
+| switch   | _ Bytes |        |       |         |             |
+| true     | _ Bytes |        |       |         |             |
+| var      | _ Bytes |        |       |         |             |
+| while    | _ Bytes |        |       |         |             |
+| type     | _ Bytes |        |       |         |             |
 
 ## Binary Format Syntax
 
 ```shell
-// Data Structure Declaration
-// Syntax - struct Name {fields};
-struct DataStructure {
-	byte_type: byte,
-	unsigned_integer_size: usize,
-	unsigned_integer_8bit: uint8,
-	unsigned_integer_16bit: uint16,
-	unsigned_integer_32bit: uint32,
-	unsigned_integer_64bit: uint64,
-	unsigned_integer_128bit: uint128,
-	signed_integer_size: isize,
-	signed_integer_8bit: int8,
-	signed_integer_16bit: int16,
-	signed_integer_32bit: int32,
-	signed_integer_64bit: int64,
-	signed_integer_128bit: int128,
-	float_32bit: float32,
-	float_64bit: float64,
-	float_128bit: float128,
-	boolean_type: bool,
-	character_type: char,
-	string_type: str,
-	array_type: [5]uint8,
-	map_type: map<uint8, str>,
-	structure_type: DataStructure
-};
 
-// Data Structure Initialization
-// Syntax - var name: type = {fields};
-var structure_type: DataStructure = {
-	byte_type: null,
-	unsigned_integer_size: 0,
-	unsigned_integer_8bit: 1,
-	unsigned_integer_16bit: 2,
-	unsigned_integer_32bit: 3,
-	unsigned_integer_64bit: 4,
-	unsigned_integer_128bit: 5,
-	signed_integer_size: null,
-	signed_integer_8bit: -1,
-	signed_integer_16bit: -2,
-	signed_integer_32bit: -3,
-	signed_integer_64bit: -4,
-	signed_integer_128bit: -5,
-	float_32bit: null,
-	float_64bit: 2.0,
-	float_128bit: 3.0,
-	boolean_type: true,
-	character_type: 'a',
-	string_type: "string",
-	array_type: {},
-	map_type: {},
-	structure_type: {}
-};
-
-// Data Structure Initialized Declaration
-// Syntax - struct Name {fields};
-struct DataStructure {
-	byte_type: byte = null;
-	unsigned_integer_size: usize = 0;
-	unsigned_integer_8bit: uint8 = 1;
-	unsigned_integer_16bit: uint16 = 2;
-	unsigned_integer_32bit: uint32 = 3;
-	unsigned_integer_64bit: uint64 = 4;
-	unsigned_integer_128bit: uint128 = 5;
-	signed_integer_size: isize = null;
-	signed_integer_8bit: int8 = -1;
-	signed_integer_16bit: int16 = -2;
-	signed_integer_32bit: int32 = -3;
-	signed_integer_64bit: int64 = -4;
-	signed_integer_128bit: int128 = -5;
-	float_32bit: float32 = null;
-	float_64bit: float64 = 2.0;
-	float_128bit: float128 = 3.0;
-	boolean_type: bool = true;
-	character_type: char = 'a';
-	string_type: str = "string";
-	array_type: [5]uint8 = {};
-	map_type: map<uint8, str> = {};
-	structure_type: DataStructure = {};
-};
-
-// Variable Declaration
-// Syntax - var name: type;
-
-// Boolean Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-var boolean_type: bool = true;
-
-// Byte Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-var byte_type: byte = 'a';
-
-// Character Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var character_type: char = 'a';
-
-// Float Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-var float_32bit: float32 = 1.0;
-
-// Integer Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-var unsigned_integer_8bit: uint8 = 1;
-
-// Platform Dependent Integer Size Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-// Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
-var signed_integer_size: isize = -1;
-
-// String Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var string_type: str = "string";
-
-// Array Initialization
-// Syntax - var name: [length]type = {values};
-// OR
-// Multi-Dimensional Syntax - var name: [rows][columns]type = {values};
-// OR
-// Unknown Size Syntax - var name: []type = {values};
-// OR
-// Null Syntax - var name: [length]type = {null};
-var array_type: [5]uint8 = {
-	1,
-	2,
-	3,
-	4,
-	5
-};
-
-// Hash Map Initialization
-// Syntax - var name: type<type, type> = {(key:value)};
-// OR
-// Null Syntax - var name: type<type, type> = {(null:null)};
-var map_type: map<uint8, str> = {
-	(1:"string"),
-	(2:"string"),
-	(3:"string"),
-	(4:"string"),
-	(5:"string")
-};
 ```
 

@@ -12,6 +12,7 @@
 * .schema Files Cannot be Dynamically Typed
 * .schema Files are Optional
 * // This is a Comment
+* # This is a Comment
 
 == Dynamically Typed Syntax
 
