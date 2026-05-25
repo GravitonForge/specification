@@ -10,30 +10,8 @@
 // .schema Files Must be Statically Typed
 // .schema Files Cannot be Dynamically Typed
 // .schema Files are Optional
-
-//! Documentation Comment
-//!  - Inner line doc
-//!! - Still an inner line doc (but with a bang at the beginning)
-/*!  - Inner block doc */
-/*!! - Still an inner block doc (but with a bang at the beginning) */
-//   - Only a comment
-///  - Outer line doc (exactly 3 slashes)
-//// - Only a comment
-/*   - Only a comment */
-/**  - Outer block doc (exactly) 2 asterisks */
-/*** - Only a comment */
-
-#! Documentation Comment
-##!  - Inner line doc
-##!! - Still an inner line doc (but with a bang at the beginning)
-#*!  - Inner block doc */
-#*!! - Still an inner block doc (but with a bang at the beginning) */
-##   - Only a comment
-###  - Outer line doc (exactly 3 hash symbols)
-#### - Only a comment
-#*   - Only a comment */
-#**  - Outer block doc (exactly) 2 asterisks */
-#*** - Only a comment */
+// This is a Comment
+## This is a Comment
 
 // Data Structure Keyword - struct
 // Generic Type Keyword - type
