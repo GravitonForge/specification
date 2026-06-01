@@ -4,14 +4,6 @@
 * .binary Files Must be Statically Typed
 * .binary Files Cannot be Dynamically Typed
 * .binary Files are Required
-* // This is a Comment
-* ## This is a Comment
-* //* This is a Multi-Line Comment *\\
-* ##* This is a Multi-Line Comment *##
-* //! This is a Documentation Comment
-* ##! This is a Documentation Comment
-* //*! This is a Multi-Line Documentation Comment !*\\
-* ##*! This is a Multi-Line Documentation Comment !*##
 
 == Keywords and Primitive Types
 
