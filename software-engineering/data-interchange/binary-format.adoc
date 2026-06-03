@@ -19,6 +19,8 @@
 
 | char | _ Bytes | | | |
 
+| fsize | _ Bytes | | | |
+
 | float32 | _ Bytes | | | |
 
 | float64 | _ Bytes | | | |
