@@ -23,6 +23,11 @@
 // Generic Type Keyword - type
 // Variable Keyword - var
 
+// Platform Dependent Types:
+// usize - Unsigned Integer Size
+// isize - Signed Integer Size
+// fsize - Floating Point Integer Size
+
 // Data Structure Declaration
 // Syntax - struct Name {fields};
 struct DataStructure {
