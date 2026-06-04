@@ -1,0 +1,11 @@
+// Query Language Definition
+// Query Source File: .query
+// This is a Comment
+## This is a Comment
+//* This is a Multi-Line Comment *\\
+##* This is a Multi-Line Comment *##
+//! This is a Documentation Comment
+##! This is a Documentation Comment
+//*! This is a Multi-Line Documentation Comment !*\\
+##*! This is a Multi-Line Documentation Comment !*##
+
