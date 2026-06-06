@@ -75,8 +75,8 @@ struct DataStructure {
 	boolean_type: bool = true;
 	character_type: char = 'a';
 	string_type: str = "string";
-	array_type: [5]uint8 = {};
-	map_type: map<uint8, str> = {};
+	array_type: [5]uint8 = [];
+	map_type: map<uint8, str> = [];
 	structure_type: DataStructure = {};
 };
 
@@ -102,8 +102,8 @@ var structure_type: DataStructure = {
 	boolean_type: true,
 	character_type: 'a',
 	string_type: "string",
-	array_type: {},
-	map_type: {},
+	array_type: [],
+	map_type: [],
 	structure_type: {}
 };
 
@@ -157,30 +157,30 @@ var signed_integer_size: isize = -1;
 var string_type: str = "string";
 
 // Array Initialization
-// Syntax - var name: [length]type = {values};
+// Syntax - var name: [length]type = [values];
 // OR
-// Multi-Dimensional Syntax - var name: [rows][columns]type = {values};
+// Multi-Dimensional Syntax - var name: [rows][columns]type = [values];
 // OR
-// Unknown Size Syntax - var name: []type = {values};
+// Unknown Size Syntax - var name: [_]type = [values];
 // OR
-// Null Syntax - var name: [length]type = {null};
-var array_type: [5]uint8 = {
+// Null Syntax - var name: [length]type = [null];
+var array_type: [5]uint8 = [
 	1,
 	2,
 	3,
 	4,
 	5
-};
+];
 
 // Hash Map Initialization
-// Syntax - var name: type|type, type| = {(key:value)};
+// Syntax - var name: type|type, type| = [(key:value)];
 // OR
-// Null Syntax - var name: type|type, type| = {(null:null)};
-var map_type: map|uint8, str| = {
+// Null Syntax - var name: type|type, type| = [(null:null)];
+var map_type: map|uint8, str| = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-};
+];
 

@@ -25,8 +25,8 @@ DataStructure {
 	boolean_type = true;
 	character_type = 'a';
 	string_type = "string";
-	array_type = {};
-	map_type = {};
+	array_type = [];
+	map_type = [];
 	structure_type = DataStructure {};
 };
 
@@ -70,26 +70,26 @@ integer_type = 1;
 string_type = "string";
 
 // Array Initialization
-// Syntax - name = {values};
+// Syntax - name = [values];
 // OR
-// Null Syntax - name = {null};
-array_type = {
+// Null Syntax - name = [null];
+array_type = [
 	1,
 	2,
 	3,
 	4,
 	5
-};
+];
 
 // Hash Map Initialization
-// Syntax - name = {(key:value)};
+// Syntax - name = [(key:value)];
 // OR
-// Null Syntax - name = {(null:null)};
-map_type = {
+// Null Syntax - name = [(null:null];
+map_type = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-};
+];
 
