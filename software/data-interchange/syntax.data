@@ -20,7 +20,6 @@
 // Data Structure Initialized Declaration
 // Syntax - Name {fields};
 DataStructure {
-	byte_type = null;
 	integer_type = 1;
 	float_type = 1.0;
 	boolean_type = true;
