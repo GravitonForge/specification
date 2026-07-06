@@ -49,7 +49,7 @@ struct DataStructure {
 	character_type: char;
 	string_type: str;
 	array_type: [5]uint8;
-	map_type: map|uint8, str|;
+	map_type: HashMap(uint8, str);
 	structure_type: DataStructure;
 };
 
@@ -76,9 +76,12 @@ struct DataStructure {
 	character_type: char = 'a';
 	string_type: str = "string";
 	array_type: [5]uint8 = [];
-	map_type: map<uint8, str> = [];
+	map_type: HashMap(uint8, str) = [];
 	structure_type: DataStructure = {};
 };
+
+// Variable Declaration
+// Syntax - var name: type;
 
 // Data Structure Initialization
 // Syntax - var name: type = {fields};
@@ -106,9 +109,6 @@ var structure_type: DataStructure = {
 	map_type: [],
 	structure_type: {}
 };
-
-// Variable Declaration
-// Syntax - var name: type;
 
 // Boolean Initialization
 // Syntax - var name: type = value;
@@ -173,10 +173,10 @@ var array_type: [5]uint8 = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name: type|type, type| = [(key:value)];
+// Syntax - var name: type(type, type) = [(key:value)];
 // OR
-// Null Syntax - var name: type|type, type| = [(null:null)];
-var map_type: map|uint8, str| = [
+// Null Syntax - var name: type(type, type) = [(null:null)];
+var map_type: HashMap(uint8, str) = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
