@@ -10,13 +10,13 @@
 * .schema Files Cannot be Dynamically Typed
 * .schema Files are Optional
 * // This is a Comment
-* ## This is a Comment
-* //* This is a Multi-Line Comment *\\
-* ##* This is a Multi-Line Comment *##
-* //! This is a Documentation Comment
-* ##! This is a Documentation Comment
-* //*! This is a Multi-Line Documentation Comment !*\\
-* ##*! This is a Multi-Line Documentation Comment !*##
+* # This is a Comment
+* /* This is a Multi-Line Comment *\
+* #* This is a Multi-Line Comment *#
+* /! This is a Documentation Comment
+* #! This is a Documentation Comment
+* /!* This is a Multi-Line Documentation Comment *!\
+* #!* This is a Multi-Line Documentation Comment *!#
 
 == Dynamically Typed Syntax
 
@@ -135,11 +135,12 @@ struct DataStructure {
 	character_type: char;
 	string_type: str;
 	array_type: [5]uint8;
-	map_type: HashMap(uint8, str);
+	map_type: HashMap|uint8, str|;
 	structure_type: DataStructure;
 };
 
 // Data Structure Initialized Declaration
+// Initialized with Default Values
 // Syntax - struct Name {fields};
 struct DataStructure {
 	unsigned_integer_size: usize = 0;
@@ -162,7 +163,7 @@ struct DataStructure {
 	character_type: char = 'a';
 	string_type: str = "string";
 	array_type: [5]uint8 = [];
-	map_type: HashMap(uint8, str) = [];
+	map_type: HashMap|uint8, str| = [];
 	structure_type: DataStructure = {};
 };
 
@@ -259,10 +260,10 @@ var array_type: [5]uint8 = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name: type(type, type) = [(key:value)];
+// Syntax - var name: type|type, type| = [(key:value)];
 // OR
-// Null Syntax - var name: type(type, type) = [(null:null)];
-var map_type: HashMap(uint8, str) = [
+// Null Syntax - var name: type|type, type| = [(null:null)];
+var map_type: HashMap|uint8, str| = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),

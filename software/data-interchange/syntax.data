@@ -9,13 +9,13 @@
 // .schema Files Cannot be Dynamically Typed
 // .schema Files are Optional
 // This is a Comment
-## This is a Comment
-//* This is a Multi-Line Comment *\\
-##* This is a Multi-Line Comment *##
-//! This is a Documentation Comment
-##! This is a Documentation Comment
-//*! This is a Multi-Line Documentation Comment !*\\
-##*! This is a Multi-Line Documentation Comment !*##
+# This is a Comment
+/* This is a Multi-Line Comment *\
+#* This is a Multi-Line Comment *#
+/! This is a Documentation Comment
+#! This is a Documentation Comment
+/!* This is a Multi-Line Documentation Comment *!\
+#!* This is a Multi-Line Documentation Comment *!#
 
 // Data Structure Initialized Declaration
 // Syntax - Name {fields};
