@@ -41,13 +41,6 @@ DataStructure {
 // Null Syntax - name = null;
 boolean_type = true;
 
-// Byte Initialization
-// Syntax - name = value;
-// OR
-// Null Syntax - name = null;
-// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-byte_type = 'a';
-
 // Character Initialization
 // Syntax - name = value;
 // OR
@@ -134,7 +127,7 @@ struct DataStructure {
 	boolean_type: bool;
 	character_type: char;
 	string_type: str;
-	array_type: [5]uint8;
+	array_type: Vector|uint8|;
 	map_type: HashMap|uint8, str|;
 	structure_type: DataStructure;
 };
@@ -162,7 +155,7 @@ struct DataStructure {
 	boolean_type: bool = true;
 	character_type: char = 'a';
 	string_type: str = "string";
-	array_type: [5]uint8 = [];
+	array_type: Vector|uint8| = [];
 	map_type: HashMap|uint8, str| = [];
 	structure_type: DataStructure = {};
 };
@@ -203,13 +196,6 @@ var structure_type: DataStructure = {
 // Null Syntax - var name: type = null;
 var boolean_type: bool = true;
 
-// Byte Initialization
-// Syntax - var name: type = value;
-// OR
-// Null Syntax - var name: type = null;
-// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-var byte_type: byte = 'a';
-
 // Character Initialization
 // Syntax - var name: type = value;
 // OR
@@ -244,14 +230,10 @@ var signed_integer_size: isize = -1;
 var string_type: str = "string";
 
 // Array Initialization
-// Syntax - var name: [length]type = [values];
+// Syntax - var name: Vector|type| = [values];
 // OR
-// Multi-Dimensional Syntax - var name: [rows][columns]type = [values];
-// OR
-// Unknown Size Syntax - var name: [_]type = [values];
-// OR
-// Null Syntax - var name: [length]type = [null];
-var array_type: [5]uint8 = [
+// Null Syntax - var name: Vector|type| = [null];
+var array_type: Vector|uint8| = [
 	1,
 	2,
 	3,

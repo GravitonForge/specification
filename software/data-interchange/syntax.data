@@ -36,13 +36,6 @@ DataStructure {
 // Null Syntax - name = null;
 boolean_type = true;
 
-// Byte Initialization
-// Syntax - name = value;
-// OR
-// Null Syntax - name = null;
-// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-byte_type = 'a';
-
 // Character Initialization
 // Syntax - name = value;
 // OR
