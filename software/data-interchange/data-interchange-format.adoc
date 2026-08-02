@@ -97,7 +97,6 @@ map_type = [
 [,shell]
 ----
 // Data Structure Keyword - struct
-// Generic Type Keyword - type
 // Variable Keyword - var
 
 // Platform Dependent Types:
