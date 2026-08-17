@@ -15,8 +15,6 @@
 
 | bool | _ Bytes | | | |
 
-| byte | _ Bytes | | | |
-
 | char | _ Bytes | | | |
 
 | fsize | _ Bytes | | | |
@@ -26,6 +24,8 @@
 | float64 | _ Bytes | | | |
 
 | float128 | _ Bytes | | | |
+
+| HashMap | _ Bytes | | | |
 
 | isize | _ Bytes | | | |
 
@@ -38,8 +38,6 @@
 | int64 | _ Bytes | | | |
 
 | int128 | _ Bytes | | | |
-
-| map | _ Bytes | | | |
 
 | str | _ Bytes | | | |
 
@@ -54,6 +52,8 @@
 | uint64 | _ Bytes | | | |
 
 | uint128 | _ Bytes | | | |
+
+| Vector | _ Bytes | | | |
 |========================================================
 
 === Keywords
