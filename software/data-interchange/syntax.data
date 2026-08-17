@@ -1,8 +1,8 @@
 // Data Interchange Format
 // Data Source File: .data
 // Schema Definition Header File: .schema
-// .data Files May be Dynamically Typed
-// .data Files May be Statically Typed
+// .data Files Must be Dynamically Typed
+// .data Files Cannot be Statically Typed
 // .data Files are Required
 // .schema Files Must be Statically Typed
 // .schema Files Cannot be Dynamically Typed
